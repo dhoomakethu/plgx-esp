@@ -22,7 +22,6 @@
  }
  body {
    color: #646c9a;
-   font-family: Poppins;
  }
  .custom-input-file {
   width: 100%;
@@ -34,7 +33,7 @@
   border-radius: 4px;
 }
 
-:host ::ng-deep .btn-secondary:active, 
+:host ::ng-deep .btn-secondary:active,
 :host ::ng-deep .btn-secondary:hover{
   background-color: #518c24f2 !important;
   border-color: #518c24f2 !important;

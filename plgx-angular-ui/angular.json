@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "387b0f37-a4cc-4f06-aa46-2731b6ecc8f5"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -54,7 +57,9 @@
               "src/assets/demo/default/skins/header/menu/light.css",
               "src/css/datatable.css",
               "src/assets/vendors/custom/datatables/datatables.bundle.css",
-              "node_modules/ngx-toastr/toastr.css"
+              "node_modules/ngx-toastr/toastr.css",
+              "src/css/custom.css"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

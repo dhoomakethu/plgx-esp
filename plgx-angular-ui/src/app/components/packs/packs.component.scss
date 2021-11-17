@@ -5,12 +5,12 @@
 $ph-bg:                   #fff !default;
 $ph-color:                #ced4da !default;
 $ph-border-radius:        2px !default;
- 
+
 $ph-gutter:               30px !default;
 $ph-spacer:               15px !default;
- 
+
 $ph-avatar-border-radius: 50% !default;
- 
+
 $ph-animation-duration:   .8s !default;
 .active {
     background-color: #f7f8fa;
@@ -22,10 +22,7 @@ $ph-animation-duration:   .8s !default;
     height: 50px;
     padding: 15px;
     cursor: pointer;
-    background-image: linear-gradient(to right, #b8bccc , #ffffff)!important;
-    color: #282829;
     font-size: 15px;
-    font-family: monospace;
     }
     .portlet-body_align {
     height: 705px;
@@ -41,13 +38,13 @@ $ph-animation-duration:   .8s !default;
     font-size: 100%;
     color: #e83e8c;
     word-break: break-word;
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    // font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     }
     .head-table {
     font-weight: 600 !important;
     }
     .txt-fmly{
-    font-family: Poppins;
+    // font-family: Poppins;
     font-size: 1rem;
     font-weight: 400;
     }
@@ -100,7 +97,7 @@ $ph-animation-duration:   .8s !default;
  }
 
     @import "~node_modules/ngx-chips/core/styles/core/_core.scss";
- $foundation-primary: green;
+ $foundation-primary: #52B2A8;
  $foundation-primary-dark: darken($foundation-primary, 10%);
  $font-family: "Poppins", sans-serif !important;
 

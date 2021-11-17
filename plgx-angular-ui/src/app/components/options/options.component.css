@@ -6,11 +6,6 @@
   color: #464457;
   font-weight: 600;
 }
-.btn-success.active{
-  color: #fff !important;
-  background-color: #518c24 !important;
-  border-color: #518c24 !important;
-}
 .section_title {
   display: block;
   padding: 0;
@@ -35,15 +30,6 @@
 :host ::ng-deep json-editor > div,
 :host ::ng-deep json-editor jsoneditor-outer {
   height: 400px 
-}
-/* :host ::ng-deep .jsoneditor-menu{
-  background-color: #000000bd;
-  border: 1px solid black;
-} */
-
-:host ::ng-deep .jsoneditor .jsoneditor-menu{
-  background-color: #000000bd;
-  border: 1px solid black;
 }
 
 :host ::ng-deep .jsoneditor-contextmenu .jsoneditor-menu{

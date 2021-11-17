@@ -16,24 +16,21 @@
 }
 .table td {
     padding: 0rem;
-    font-family: Poppins;
     font-size: 12px;
 }
 .table th {
     font-weight: 500;
     // padding: 0rem;
     padding-left: 0px;
-    font-family: Poppins;
 }
 .ng2-tag-input {
-    font-family: 'Poppins';
     border-bottom: none;
     padding-bottom: 0rem;
 
   }
 
 @import "~node_modules/ngx-chips/core/styles/core/_core.scss";
-$foundation-primary: green;
+$foundation-primary: #52B2A8;
 $foundation-primary-dark: darken($foundation-primary, 10%);
 $font-family: "Poppins", sans-serif !important;
 

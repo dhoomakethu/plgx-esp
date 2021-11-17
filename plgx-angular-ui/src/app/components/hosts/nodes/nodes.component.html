@@ -89,7 +89,7 @@
             </span>
             <h1 class="kt-portlet__head-title" style="font-size: 20px;">
               {{node_info?.computer_name}} /
-              <a [routerLink]="['../',this.id,'activity']" data-skin="dark" data-toggle="kt-tooltip"
+              <a class="routerLink_Font_colour"[routerLink]="['../',this.id,'activity']" data-skin="dark" data-toggle="kt-tooltip"
                 data-placement="top" title="click -> Activity for recent Node ">recent activity</a>
             </h1>
 
@@ -164,7 +164,7 @@
                           <div class="col-md-2 col-form-label form--p" data-toggle="tooltip" title="Host Name">
                             {{node_info?.computer_name}}
                           </div> -->
-                          <i class="fa fa-user host_name" aria-hidden="true"  data-toggle="tooltip" title="Host Name"></i>
+                          <i class="fa fa-user host_name fnt-green" aria-hidden="true"  data-toggle="tooltip" title="Host Name"></i>
                           <div class="dropdown col-md-2 col-form-label form--p" style="margin-top:-10px">
                            <div class="col-md-12 col-form-label form--p overflow" >
                             <span>{{node_info?.computer_name}}</span>
@@ -175,12 +175,12 @@
                           </div>
                         </div>
 
-                          <i class="fa fa-laptop hw_mdl" aria-hidden="true" data-toggle="tooltip" title="Make & Model"></i>
+                          <i class="fa fa-laptop hw_mdl fnt-green" aria-hidden="true" data-toggle="tooltip" title="Make & Model"></i>
                           <div class="col-md-2 col-form-label form--p overflow" data-toggle="tooltip" title="Make & Model" >
                             <span>{{node_info?.hardware_vendor}}<b>-</b>{{node_info?.hardware_model}}</span>
                           </div>
 
-                          <i class="fa fa-microchip cpu_cores" aria-hidden="true" data-toggle="tooltip" title="CPU Cores"></i>
+                          <i class="fa fa-microchip cpu_cores fnt-green" aria-hidden="true" data-toggle="tooltip" title="CPU Cores"></i>
                           <div class="col-md-2 col-form-label form--p" data-toggle="tooltip" title="CPU Cores">
                             Cpu Cores<b>-</b>{{node_info?.cpu_physical_cores}}
                           </div>
@@ -223,7 +223,7 @@
                          </div>
                         </div>
                            <div class="row">
-                            <i class="fa fa-memory ph_memory" aria-hidden="true" data-toggle="tooltip" title="Memory"></i>
+                            <i class="fa fa-memory ph_memory fnt-green" aria-hidden="true" data-toggle="tooltip" title="Memory"></i>
                           <div class="col-md-2 col-form-label form--p" data-toggle="tooltip" title="Memory">
                             {{physical_memory}}
                           </div>
@@ -233,12 +233,12 @@
                                {{this.nodes?.last_ip}}
                           </div>
 
-                          <i class="fa fa-calendar enrolled" aria-hidden="true" data-toggle="tooltip" title="Agent Enrolled"></i>
+                          <i class="fa fa-calendar enrolled fnt-green" aria-hidden="true" data-toggle="tooltip" title="Agent Enrolled"></i>
                           <div class="col-md-2 col-form-label form--p" data-toggle="tooltip" title="Agent Enrolled">
                             Enrolled<b>:</b> {{this.enrolled | date}}
                           </div>
 
-                        <i class="fa fa-align-justify serial" aria-hidden="true" data-toggle="tooltip" title="Serial No."></i>
+                        <i class="fa fa-align-justify serial fnt-green" aria-hidden="true" data-toggle="tooltip" title="Serial No."></i>
                         <div class="col-md-4 col-form-label form--p" data-toggle="tooltip" title="Serial No.">
                          {{node_info?.hardware_serial}}
                         </div>
@@ -251,12 +251,12 @@
                             {{hostDetails['osquery_version']}}
                           </div>
 
-                          <img src="../assets/media/poly-img/favicon2x.png" data-toggle="tooltip" title="PolyLogyx Agent Version" class="ex_version">
-                          <div class="col-md-2 col-form-label form--p" data-toggle="tooltip" title="PolyLogyx Agent Version">
+                          <img src="../assets/media/eiq-img/logo.svg" data-toggle="tooltip" title="{{ProjectName}} Agent Version" class="ex_version">
+                          <div class="col-md-2 col-form-label form--p" data-toggle="tooltip" title="{{ProjectName}} Agent Version">
                             {{hostDetails['extension_version']}}
                           </div>
 
-                         <i class="fa fa-clock lastseen" aria-hidden="true" ></i>
+                         <i class="fa fa-clock lastseen fnt-green" aria-hidden="true" ></i>
                          <div class="dropdown" style='width: 205px;'>
                           <div class="col-md-12 col-form-label form--p" >
                           <p>Last Seen<b>:</b> {{this.lastcheckin | dateAgo}}</p>

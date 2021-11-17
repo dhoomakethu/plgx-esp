@@ -13,6 +13,7 @@ export class ReadmeComponent implements OnInit {
   cpt_down:any;
   route: string;
   currentURL='';
+  ProjectName=this.commonvariable.APP_NAME
   Version=this.commonvariable.version_in_readme_content
   Windows_plgx_cpt_exe=this.commonvariable.Windows_plgx_cpt_exe
   Linux_plgx_cpt=this.commonvariable.Linux_plgx_cpt
@@ -22,6 +23,7 @@ export class ReadmeComponent implements OnInit {
   Windows_x86_plgx_osqueryd_exe=this.commonvariable.Windows_x86_plgx_osqueryd_exe
   Linux_plgx_osqueryd=this.commonvariable.Linux_plgx_osqueryd
   Linux_plgx_linux_extension_ext=this.commonvariable.Linux_plgx_linux_extension_ext
+  CopyRightYear=this.commonvariable.CopyRightYear
   constructor(
     private _Activatedroute:ActivatedRoute,
     private router: Router,

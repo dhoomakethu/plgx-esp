@@ -1,40 +1,55 @@
 <div class="kt-grid kt-grid--ver kt-grid--root">
   <div class="kt-grid kt-grid--hor kt-grid--root kt-login kt-login--v3 kt-login--signin" id="kt_login">
-    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor"
-      style="height:100vh; background-image: url(../assets/media/bg/bg-3.jpg);">
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-login-div">
       <div class="kt-grid__item kt-grid__item--fluid kt-login__wrapper">
         <!--Begin::content-->
-        <div class="kt-portlet__body">
+        <div class="kt-portlet__body pt-5 pb-4 kt-login-container">
           <div class="">
             <div class="kt-login__container" >
-              <div class="kt-login__logo">
+              <div class="kt-login__logo mb-4 mt-4">
                 <a href="#">
-                  <img src="../assets/media/poly-img/poly-6.png" width="250px">
+                  <!-- <img src="../assets/media/poly-img/poly-6.png" width="250px"> -->
+                  <img alt="Logo" src="/assets/media/eiq-img/eclecticiq_loginlogo.svg" width="140px" style="padding-bottom:5px;" /><label class="kt-login-logo"> | &nbsp; ESP</label>
                 </a>
               </div>
               <!--Begin::Login-->
               <div class="kt-login__signin">
                 <div class="kt-login__head">
-                  <h3 class="kt-login__title">Sign In To Admin</h3>
+                  <!-- <h3 class="kt-login__title">Sign In To Admin</h3> -->
                 </div>
                 <!-- <div *ngIf="message" [ngClass]="message.cssClass">{{message.text}}</div> -->
                 <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" >
                   <div class="loginform-row">
                     <div class="form-group">
-                      <input type="text" placeholder="Username" name="username" [(ngModel)]="credentials.username" class="form-control">
+                      <input type="text" placeholder="Enter Username" name="username" [(ngModel)]="credentials.username" class="form-control text-left kt-login-txt">
                     </div>
                   </div>
                   <div class="loginform-row">
-                    <div class="form-group">
-                      <input type="password" placeholder="Password" name="password" [(ngModel)]="credentials.password" class="form-control">
+                    <div class="input-group form-password" >
+                       <input [type]="fieldTextType ? 'text' : 'password'" placeholder="Enter Password" name="password" [(ngModel)]="credentials.password" class="form-control text-left kt-login-txt kt-pw-border">
+                       <div class="input-group-append input-password kt-login-txt">
+                         <span class="input-group-text bg-white">
+                           <i
+                             class="fa"
+                             [ngClass]="{
+                             'fa-eye-slash': !fieldTextType,
+                             'fa-eye': fieldTextType
+                             }"
+                             (click)="toggleFieldTextType()"
+                           ></i>
+                         </span>
+                       </div>
                     </div>
                   </div>
-                  <div class="loginform-row">
-                   <button [disabled]="loading" class="btn btn-brand btn-elevate btn-success">
-                      <span *ngIf="loading"  class="spinner-border spinner-border-sm mr-1"></span>
-                      Sign In
-                    </button>
-                    <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+                  <div class="loginform-row kt-submit-row">
+                    <div class="kt-submit-div">
+                      <button [disabled]="loading"  class="btn btn-brand btn-elevate shadow">
+                         <span *ngIf="loading"  class="spinner-border spinner-border-sm mr-1"></span>
+                         SIGN IN
+                       </button>
+                    </div>
+
+                    <div *ngIf="error" class="alert alert-danger mt-3 mx-3 mb-0">{{error}}</div>
                   </div>
                 </form>
               </div>

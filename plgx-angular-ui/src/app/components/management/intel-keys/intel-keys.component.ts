@@ -30,7 +30,7 @@ export class IntelKeysComponent implements OnInit {
   virustotalError: any;
   alienvaultkeyError: any;
   ibmxforcepassError: any;
-
+  ProjectName=this.commonvariable.APP_NAME
   constructor(
     private fb: FormBuilder,
     private commonapi: CommonapiService,

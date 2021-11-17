@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonapiService } from '../../dashboard/_services/commonapi.service';
 import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
+import { CommonVariableService } from '../../dashboard/_services/commonvariable.service';
 import { Location } from '@angular/common';
 import swal from 'sweetalert';
 import Swal from 'sweetalert2';
@@ -23,10 +24,11 @@ export class IocComponent implements OnInit {
   public result: any;
   error: any;
   public json_data: any = {};
-
+  ProjectName=this.commonvariable.APP_NAME
   constructor(
     private commonapi: CommonapiService,
-    private _location: Location
+    private _location: Location,
+    private commonvariable: CommonVariableService,
   ) {
     this.options.mode = 'code';
     this.options.modes = ['code', 'text', 'tree', 'view'];

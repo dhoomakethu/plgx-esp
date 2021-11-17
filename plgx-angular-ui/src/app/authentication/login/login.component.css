@@ -47,7 +47,7 @@
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: left;
   }
-  
+
   #formFooter {
   background-color: #f6f6f6;
   border-top: 1px solid #dce8f1;
@@ -56,20 +56,20 @@
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
   }
-  
+
   /* TABS */
 
   h2.inactive {
     color: #cccccc;
     }
-    
+
     h2.active {
     color: #0d0d0d;
     border-bottom: 2px solid #518c24;
     }
-    
+
     /* FORM TYPOGRAPHY*/
-    
+
     input[type=button], input[type=submit], input[type=reset], button[type=submit] {
     background-color: #56baed;
     border: none;
@@ -91,7 +91,7 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     }
-    
+
     input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button[type=submit]:hover {
     background-color: #39ace7;
     }
@@ -102,16 +102,16 @@
     -ms-transform: scale(0.95);
     transform: scale(0.95);
     }
-    
+
     input[type=text], input[type=password] {
-    background-color: #f6f6f6;
+    background-color: #FFF;
     border: none;
     color: #0d0d0d;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     margin: 5px;
     width: 85%;
     border: 2px solid #f6f6f6;
@@ -123,19 +123,19 @@
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
     }
-    
+
     input[type=text]:focus, input[type=password]:focus {
     background-color: #fff;
     border-bottom: 2px solid #518c24;
-    
+
     }
-    
+
     input[type=text]:placeholder, input[type=password]:placeholder {
     color: #cccccc;
     }
-    
+
     /* ANIMATIONS */
-    
+
     /* Simple CSS3 Fade-in-down Animation */
     .fadeInDown {
     -webkit-animation-name: fadeInDown;
@@ -145,7 +145,7 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
-    
+
     @-webkit-keyframes fadeInDown {
     0% {
     opacity: 0;
@@ -158,7 +158,7 @@
     transform: none;
     }
     }
-    
+
     @keyframes fadeInDown {
     0% {
     opacity: 0;
@@ -171,51 +171,51 @@
     transform: none;
     }
     }
-    
+
     /* Simple CSS3 Fade-in Animation */
     @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
     @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
     @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    
+
     .fadeIn {
     opacity:0;
     -webkit-animation:fadeIn ease-in 1;
     -moz-animation:fadeIn ease-in 1;
     animation:fadeIn ease-in 1;
-    
+
     -webkit-animation-fill-mode:forwards;
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
-    
+
     -webkit-animation-duration:1s;
     -moz-animation-duration:1s;
     animation-duration:1s;
     }
-    
+
     .fadeIn.first {
     -webkit-animation-delay: 0.4s;
     -moz-animation-delay: 0.4s;
     animation-delay: 0.4s;
     }
-    
+
     .fadeIn.second {
     -webkit-animation-delay: 0.6s;
     -moz-animation-delay: 0.6s;
     animation-delay: 0.6s;
     }
-    
+
     .fadeIn.third {
     -webkit-animation-delay: 0.8s;
     -moz-animation-delay: 0.8s;
     animation-delay: 0.8s;
     }
-    
+
     .fadeIn.fourth {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s;
     }
-    
+
     /* Simple CSS3 Fade-in Animation */
     .underlineHover:after {
     display: block;
@@ -227,22 +227,72 @@
     content: "";
     transition: width 0.2s;
     }
-    
+
     .underlineHover:hover {
     color: #0d0d0d;
     }
-    
+
     .underlineHover:hover:after{
     width: 100%;
     }
-    
+
     /* OTHERS */
-    
+
     *:focus {
     outline: none;
     }
-    
+
     #icon {
     width:60%;
     }
-    
+    .form-password{
+      width:90%;
+      margin:auto;
+      padding-right:10px;
+      padding-left: 5px;
+    }
+    .kt-login-div{
+      height:100vh;
+      background:#f7f7f7 !important;
+    }
+    .kt-login-logo{
+      padding-left: 15px;
+      font-size: 20px;
+      color:#4a494a;
+      font-family: 'Roboto';
+    }
+    .kt-login-txt{
+      border-radius: 0px !important;
+      border: 1px solid #c1c2c2 !important;
+    }
+    .kt-pw-border{
+      border-right:1px solid transparent !important;
+      margin-right:0px !important;
+    }
+    .kt-login-container{
+      border: 1px solid #c1c2c2 !important;
+      background:#fff
+    }
+    .input-password{
+      margin-top:5px;
+      margin-bottom:5px;
+      margin-left:-5px;
+      cursor:pointer;
+      border-left:1px solid transparent !important;
+    }
+    .kt-login__container .kt-login__logo{
+      height:70px;
+    }
+    .kt-submit-row{
+      border-top:1px solid #c1c2c2;
+      margin-top:15%;
+    }
+    .kt-submit-div{
+      text-align:right;
+      margin-right:30px;
+      margin-top:20px;
+    }
+    .kt-submit-div button{
+      background-color:#3a7b73;
+      border-color:#3a7b73
+    }

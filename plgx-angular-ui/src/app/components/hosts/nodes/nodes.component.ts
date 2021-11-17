@@ -105,6 +105,7 @@ export class NodesComponent implements AfterViewInit, OnInit, OnDestroy {
     queries_removetags_val:any;
   dtOptions: any = {};
   dtTrigger: Subject<any> = new Subject();
+  ProjectName=this.commonvariable.APP_NAME
   constructor(
     private _Activatedroute: ActivatedRoute,
     private commonapi: CommonapiService,
@@ -266,7 +267,13 @@ export class NodesComponent implements AfterViewInit, OnInit, OnDestroy {
             labels:rule_name,
             datasets: [{
                 data: rule_count,
-                backgroundColor:  "#36c" ,
+                backgroundColor: [
+                  "#2A6D7C",
+                  "#A2D9C5",
+                  "#F79750",
+                  "#794F5D",
+                  "#6EB8EC"
+              ],
                 barPercentage: 0.5,
             }]
         },

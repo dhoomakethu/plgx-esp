@@ -152,7 +152,7 @@
           <div *ngFor="let category_packs of packs_category_dictionary">
           
 
-            <h3 style="color:#6371df">{{category_packs.category}}</h3>
+            <h3 class="fnt-green" >{{category_packs.category}}</h3>
             <!--begin::Notifications-->
             <div *ngFor="let packs of (category_packs.packs  | packsearch:searchText)" class="kt-notification conf-div" id="search_query-name-list" style="cursor:pointer;" data-skin="dark" data-toggle="kt-tooltip" data-placement="top" title="{{packs}}">
                     <!-- <div *ngIf="packs === -1">No Matching Record Found</div> -->
@@ -258,7 +258,7 @@
 <div *ngFor="let queries of pack_data.queries | keyvalue" class="kt-portlet__body" style="padding: 0px;">
 <!--begin::Accordion-->
 <div class="card right-conf-card " style="margin-bottom: 0.3rem;">
-<div class="collapsed style-accordion-background" data-toggle="collapse" data-skin="dark" attr.data-target="#{{pack_data.name}}-query-{{queries.value.id}}" data-placement="top" title="{{ queries.value.name }}">
+<div class="collapsed bg-clr style-accordion-background" data-toggle="collapse" data-skin="dark" attr.data-target="#{{pack_data.name}}-query-{{queries.value.id}}" data-placement="top" title="{{ queries.value.name }}">
 {{ queries.value.name}}
 <a [routerLink] = "['./',queries.value.id,'edit']" class="query_edit" data-skin="dark" data-toggle="kt-tooltip" data-placement="top" title="Edit Packs">
 <img class="pull-right" src="/assets/media/icons/edit-document.svg" height="24" width="24" alt="">

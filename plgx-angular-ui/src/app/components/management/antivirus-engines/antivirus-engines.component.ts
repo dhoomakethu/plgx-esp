@@ -19,6 +19,7 @@ export class AntivirusEnginesComponent implements OnInit {
  av_engines_data_table4={}
  av_engines={}
  apikey_data:any;
+ ProjectName=this.commonvariable.APP_NAME
   constructor(
     private commonapi: CommonapiService,
     private commonvariable: CommonVariableService,

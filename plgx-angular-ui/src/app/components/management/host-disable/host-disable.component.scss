@@ -16,20 +16,17 @@
 }
 .table td {
     padding: 0rem;
-    font-family: Poppins;
     font-size: 12px;
 }
 .table th {
     font-weight: 500;
     // padding: 0rem;
     padding-left: 0px;
-    font-family: Poppins;
 }
 .ng2-tag-input {
-    font-family: 'Poppins';
     border-bottom: none;
     padding-bottom: 0rem;
-  
+
   }
 
 @import "~node_modules/ngx-chips/core/styles/core/_core.scss";
@@ -68,9 +65,9 @@ $foundation-icon-theme: (
 
 // apply theme to the container
 ::ng-deep tag-input .ng2-tag-input.foundation-theme {
-    
+
     @include tag-input-theme($foundation-theme);
-    
+
 }
 
 // apply theme to the tags
@@ -88,7 +85,7 @@ $foundation-icon-theme: (
     height: 13px;
 }
 ::ng-deep tag-input .ng2-tag-input.foundation-theme{
-    border-bottom: 2px solid  #fff; 
+    border-bottom: 2px solid  #fff;
 }
 table.dataTable {
     background-color:#fff;
@@ -112,10 +109,10 @@ table.dataTable thead th, table.dataTable thead td {
 $ph-bg:                   #fff !default;
 $ph-color:                #ced4da !default;
 $ph-border-radius:        2px !default;
- 
+
 $ph-gutter:               30px !default;
 $ph-spacer:               15px !default;
- 
+
 $ph-avatar-border-radius: 50% !default;
- 
+
 $ph-animation-duration:   .8s !default;

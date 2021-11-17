@@ -135,3 +135,7 @@
         height: 230px;
         width: 321px;
     }
+    .kt-portlet__body-div{
+        background:#acb2bb2b;
+        padding:10px
+      }

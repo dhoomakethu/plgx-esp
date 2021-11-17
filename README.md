@@ -322,4 +322,4 @@ To configure rsyslog forwarding modify the [rsyslogd.conf](rSysLogF/rsyslogd.con
 Please read the [LICENSE](LICENSE) file for details on the license.
 
 ## PolyLogyx ESP - Enterprise Edition
-PolyLogyx ESP comes with an enterprise flavor with advanced set of features and dedicated support. More about the enterprise edition of ESP can be learned [here](https://github.com/polylogyx/platform-docs)  or send an email to info@polylogyx.com
+PolyLogyx ESP comes with an enterprise flavor with advanced set of features and dedicated support. More about the enterprise edition of ESP can be learned [here](https://github.com/polylogyx/platform-docs)  or send an email to support@eclecticiq.com

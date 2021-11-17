@@ -10,7 +10,7 @@ pre {
   color: darkblue;
 }
    .head-color h1,h2,h3,h4 {
-    color: #518c24;
+    color:#30B0A4 !important;
    }
    .head-color ul,i {
     color: grey;
@@ -19,7 +19,6 @@ pre {
     background-color:#fff;
     color:#24292e;
     font-size: 14px;
-    font-family: Arial;
    }
    .modal-link {
     padding: 0 0.35rem 0 0;
@@ -87,4 +86,3 @@ pre {
       font-weight: 600;
       color:  #464457;
    }
-

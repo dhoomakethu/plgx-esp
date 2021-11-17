@@ -1,13 +1,6 @@
 .yar_view:hover  {
     color: #518c24;
 }
-
-.btn-success.active{
-  color: #fff !important;
-  background-color: #518c24 !important;
-  border-color: #518c24 !important;
-}
-
 .fa-lg {
   font-size: 1.5rem !important;
 }

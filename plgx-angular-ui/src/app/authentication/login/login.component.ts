@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   data: any;
   error: string;
   redirectURL:any;
-
+  fieldTextType: boolean;
   constructor(
     private router: Router,
     private _loginService: loginService,
@@ -78,5 +78,9 @@ export class LoginComponent implements OnInit {
         this.loading = false;
       })
     }
+  }
+
+  toggleFieldTextType() {
+    this.fieldTextType = !this.fieldTextType;
   }
 }

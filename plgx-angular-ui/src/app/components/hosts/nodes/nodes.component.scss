@@ -39,13 +39,7 @@
     /* width: 200px; */
     float: right;
     }
-    tabs-line-success.nav.nav-tabs .nav-link:hover, .nav-tabs.nav-tabs-line.nav-tabs-line-success.nav.nav-tabs .nav-link.active, .nav-tabs.nav-tabs-line.nav-tabs-line-success a.nav-link.active {
-    color: #518c24;
-    border-bottom: 1px solid #518c24;
-    font-weight: 500;
-    }
-
-
+   
     .kt-notification .conf-div .active {
     background-color: #f7f8fa;
     }
@@ -246,7 +240,7 @@
  }
 
     @import "~node_modules/ngx-chips/core/styles/core/_core.scss";
-$foundation-primary: green;
+$foundation-primary: #30B0A4;
 $foundation-primary-dark: darken($foundation-primary, 10%);
 $font-family: "Poppins", sans-serif !important;
 

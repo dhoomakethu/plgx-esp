@@ -3,7 +3,7 @@
     <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
 <div class="kt-portlet kt-portlet--mobile">
 <!-- start:: Content -->
-<form class="kt-form">
+<!-- <form class="kt-form"> -->
 <div class="kt-portlet__head kt-portlet__head--lg">
 <div class="kt-portlet__head-label">
   <span class="kt-portlet__head-icon">
@@ -11,26 +11,23 @@
   </span>
   <h3 class="kt-portlet__head-title">Config</h3>
 </div>
-<div class="kt-portlet__head-toolbar">
-  <div class="kt-portlet__head-wrapper">
-    <div class="kt-portlet__head-actions">
-
+    <div class="row mt-3" style="margin-left: 0px;">
         <ul class="nav nav-pills nav-fill nav-background" role="tablist">
           <li class="nav-item" style="cursor: pointer;" (click)="onClick(1)">
             <div class="nav-link cursor-tab" id="windows" [ngClass]="{'active': tab==='tab1'}" data-toggle="tab" (click)="showDataAsPerPlatformSelection(config.data.windows.x86_64['1']['queries'],config.data.windows.x86_64['1']['filters'],'windows','x86_64','shallow',config.data.windows.x86_64['1']['status'])" id="Windows" data-skin="dark" data-toggle="kt-tooltip" data-placement="top" title="Windows Platforms">
-              <i class="fab fa-2x fa-windows" style=""></i>
+              <img alt="Logo" src="./assets/media/logo/windows.svg" height="20px" width="20px"/>
               Windows(x64)
             </div>
           </li>
           <li class="nav-item" style="cursor: pointer;" (click)="onClick(2)">
             <div class="nav-link" id="Windows_x86" [ngClass]="{'active': tab==='tab2'}" data-toggle="tab" (click)="showDataAsPerPlatformSelection(config.data.windows.x86['0']['queries'],config.data.windows.x86['0']['filters'],'windows','x86','default',config.data.windows.x86['0']['status'])"  data-skin="dark" data-toggle="kt-tooltip" data-placement="top" title="Windows Platforms">
-              <i class="fab fa-2x fa-windows" style=""></i>
+              <img alt="Logo" src="./assets/media/logo/windows.svg" height="20px" width="20px"/>
               Windows(x86)
             </div>
           </li>
           <li class="nav-item" style="cursor: pointer;" (click)="onClick(3)">
             <div class="nav-link"id="Linux"  [ngClass]="{'active': tab==='tab3'}" data-toggle="tab" (click)="showDataAsPerPlatformSelection(config.data.linux.x86_64['0']['queries'],config.data.linux.x86_64['0']['filters'],'linux','x86_64','default',config.data.linux.x86_64['0']['status'])" id="Linux" data-skin="dark" data-toggle="kt-tooltip" data-placement="top" title="Linux Platforms">
-              <i class="fab fa-2x fa-linux" style=""></i>
+              <img alt="Logo" src="./assets/media/logo/Linux1.svg" height="20px" width="20px"/>
               Linux
             </div>
           </li>
@@ -43,11 +40,16 @@
         </ul>
 
     </div>
-  </div>
-</div>
+    <div class="kt-portlet__head-toolbar">
+      <div class="kt-portlet__head-wrapper">
+        <div class="kt-portlet__head-actions">
+              <div class="col-5" style="width:180px"></div>
+        </div>
+      </div>
+    </div>
 </div>
 
-<div class="kt-portlet__body" style="background:#fafafa80;">
+<div class="kt-portlet__body" style="background:#fafafa80;padding-top: 8px">
 
 
 
@@ -179,15 +181,15 @@
     <div>
 <json-editor [options]="options" [data]="filters"></json-editor>
 </div>
-  <div class="kt-portlet__foot">
-    <button type="submit" (click)="onSubmit()" class="btn btn-success pull-right" id="buttonvisible" ><i class="fa fa-sync-alt"></i>
+  <div class="kt-portlet__foot text-center">
+    <button type="submit" (click)="onSubmit()" class="btn btn-success" id="buttonvisible" ><i class="fa fa-sync-alt"></i>
       <span>Update</span>
     </button>
   </div>
 </div>
 
 </div>
-</form>
+<!-- </form> -->
 <!-- end:: Content -->
 </div>
 </div>
