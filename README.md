@@ -274,7 +274,7 @@ server. Please ensure that the following commands are executed from a root/admin
 
 ### Upgrading the agent
 
-Download the latest CPT (v 1.0.40.5) and choose from the below upgrade options.
+Download the latest CPT (v 3.0.0.0) and choose from the below upgrade options.
 
 1. Shallow Upgrade : plgx_cpt.exe -g s ( Updates extension and binary and keeps the existing data).
 2. Deep Upgrade : plgx_cpt.exe -g d ( Updates extension and binary and cleans the existing data)
