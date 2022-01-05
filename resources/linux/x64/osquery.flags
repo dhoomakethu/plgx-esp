@@ -1,4 +1,4 @@
---extensions_socket=/var/plgx_osquery/osquery.em
+--extensions_socket=/var/snap/plgx-agent/common/var/plgx_osquery/osquery.em
 --disable_events=false
 --audit_allow_config=true
 --audit_allow_process_events=true
@@ -7,15 +7,15 @@
 --disable_audit=false
 --events_expiry=3600
 --events_max=2500
---pidfile=/var/run/plgx_osqueryd.pid
+--pidfile=/var/snap/plgx-agent/common/var/run/plgx_osqueryd.pid
 --host_identifier=uuid
---database_path=/var/plgx_osquery/plgx_osquery.db
+--database_path=/var/snap/plgx-agent/common/var/plgx_osquery/plgx_osquery.db
 --config_plugin=tls
 --config_tls_endpoint=/config
 --config_tls_refresh=300
 --config_tls_max_attempts=5
 --enroll_tls_endpoint=/enroll
---enroll_secret_path=/etc/plgx_osquery/secret.txt
+--enroll_secret_path=/snap/plgx-agent/current/etc/plgx_osquery/secret.txt
 --disable_distributed=false
 --distributed_plugin=tls
 --distributed_interval=15
@@ -25,8 +25,8 @@
 --logger_plugin=tls
 --logger_tls_endpoint=/log
 --logger_tls_period=30
---tls_hostname=<IP of the server>:9000
---tls_server_certs=/etc/plgx_osquery/certificate.crt
+--tls_hostname=192.168.1.6:9000
+--tls_server_certs=/snap/plgx-agent/current/etc/plgx_osquery/certificate.crt
 --log_result_events=false
 --pack_delimiter=/
 --disable_carver=false
@@ -37,6 +37,6 @@
 --watchdog_level=-1
 --utc
 --allow_unsafe
---extensions_autoload=/etc/plgx_osquery/extensions.load
+--extensions_autoload=/var/snap/plgx-agent/common/etc/plgx_osquery/extensions.load
 --extensions_interval=10
 --extensions_timeout=90
