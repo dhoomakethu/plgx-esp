@@ -255,6 +255,8 @@ server. Please ensure that the following commands are executed from a root/admin
         .
         .
         Server is up and running```
+    
+    On latest versions of Mac OSX, the port 5000 is used by airplay reciever , to use another port run the handy script `./start_esp.sh`
         
 7.  Log on to server using following URL using the latest version of Chrome or
     Firefox browser.
